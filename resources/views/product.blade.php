@@ -8,9 +8,7 @@
 @endif
 
 
-@if($busca != " ")
-    <p>Usuario procurando por: {{$busca}}</p>
-@endif
+
 
 
 
