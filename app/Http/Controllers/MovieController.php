@@ -12,7 +12,7 @@ class MovieController extends Controller
 
         $movies = Movie::all();
 
-        return view('/movies/list',['movies'=>$movies]);
+        return view('movies.list', compact('movies'));
     }
 
     public function create(){
@@ -31,7 +31,7 @@ class MovieController extends Controller
         $movie->save();
         
 
-        return redirect('/');
+        return redirect('/')->with('msg', 'Filme cadastrado com sucesso!');
 
     }
 }

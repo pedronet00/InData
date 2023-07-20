@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InData</title>
+    <title>CineTAG</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
     <link rel="stylesheet" href="/css/styles.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -26,44 +26,36 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">InData</a>
+            <a class="navbar-brand" href="/">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projetos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/movies/list">Listar Projetos</a>
-                        <a class="dropdown-item" href="/movies/create">Cadastrar Projeto</a>
-                    </div> <!-- Adicionando a tag de fechamento -->
-                  </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                
+                
+
+                
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Registrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fazer Login</a>
+                </li>
                 </form>
             </div>
         </nav>
     </header>
     
-    <main class="container-fluid">
-      <div class="row">
-        @if(session('msg'))
-          <p class="msg">{{session('msg')}}</p>
-          
-        @endif
+    
         @yield('content')
-      </div>
-    </main>
+      
 
     <footer>
     <footer class="bg-light text-center text-lg-start">
@@ -109,18 +101,7 @@
     </footer>
 </body>
 
-<script>
-            // Seleciona o elemento com a classe .msg
-            const msgElement = document.querySelector('.msg');
 
-            // Define a função para ocultar a mensagem após 3 segundos
-            function ocultarMensagem() {
-              msgElement.style.display = 'none';
-            }
-
-            // Aguarda 3 segundos (3000 milissegundos) e chama a função para ocultar a mensagem
-            setTimeout(ocultarMensagem, 3000);
-        </script>
 
 
 </html>
