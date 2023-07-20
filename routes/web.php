@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-use App\Http\Controllers\MovieController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
@@ -20,9 +20,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/movies/create', [MovieController::class, 'create']);
-Route::post('/movies', [MovieController::class, 'store']);
-Route::get('/movies/list', [MovieController::class, 'index']); 
+Route::get('/projects/create', [ProjectController::class, 'create']);
+Route::post('/projects', [ProjectController::class, 'store']);
+Route::get('/projects/list', [ProjectController::class, 'index']); 
 
 Route::get('/register', [UserController::class, 'register']);
 Route::post('/user/register', [UserController::class, 'store']);

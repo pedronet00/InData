@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('movies', function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('title');
-            $table->integer('timelasting');
-            $table->text('synopsis');
+            $table->string('projectName');
+            $table->string('projectDescription');
+            $table->string('companyProject');
         });
     }
 
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('movies');
+        Schema::dropIfExists('projects');
     }
 };
