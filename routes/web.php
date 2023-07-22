@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+<<<<<<< HEAD
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProductController;
@@ -39,3 +40,19 @@ Route::get('produtos_teste', function ($id = null) {
 
     return view('product', ['busca' => $busca]);
 });
+=======
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\UserController;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/projects/create', [ProjectController::class, 'create']);
+Route::post('/projects', [ProjectController::class, 'store']);
+Route::get('/projects/list', [ProjectController::class, 'index']); 
+
+Route::get('/register', [UserController::class, 'register']);
+Route::post('/user/register', [UserController::class, 'store']);
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5

@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+<<<<<<< HEAD
 @section('title', 'HDC Events')
 
 @section('content')
@@ -32,3 +33,9 @@
 @endsection
 
     
+=======
+@section('content')
+        <h1 style="text-align: center; width: 100%; font-size: 64px; margin-top: 5%;">Criar seus projetos nunca foi <span style="font-weight: 600; color: black;">tão fácil!</span></h1>
+        
+@endsection
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5

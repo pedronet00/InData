@@ -5831,6 +5831,7 @@
         },
         {
             "name": "mockery/mockery",
+<<<<<<< HEAD
             "version": "1.6.2",
             "source": {
                 "type": "git",
@@ -5841,18 +5842,35 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/13a7fa2642c76c58fa2806ef7f565344c817a191",
                 "reference": "13a7fa2642c76c58fa2806ef7f565344c817a191",
+=======
+            "version": "1.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "d1413755e26fe56a63455f7753221c86cbb88f66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/d1413755e26fe56a63455f7753221c86cbb88f66",
+                "reference": "d1413755e26fe56a63455f7753221c86cbb88f66",
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
                 "shasum": ""
             },
             "require": {
                 "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
+<<<<<<< HEAD
                 "php": "^7.4 || ^8.0"
+=======
+                "php": ">=7.4,<8.3"
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
             },
             "conflict": {
                 "phpunit/phpunit": "<8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5 || ^9.3",
+<<<<<<< HEAD
                 "psalm/plugin-phpunit": "^0.18",
                 "vimeo/psalm": "^5.9"
             },
@@ -5862,6 +5880,13 @@
                     "dev-main": "1.6.x-dev"
                 }
             },
+=======
+                "psalm/plugin-phpunit": "^0.18.4",
+                "symplify/easy-coding-standard": "^11.5.0",
+                "vimeo/psalm": "^5.13.1"
+            },
+            "type": "library",
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
             "autoload": {
                 "files": [
                     "library/helpers.php",
@@ -5879,12 +5904,28 @@
                 {
                     "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
+<<<<<<< HEAD
                     "homepage": "http://blog.astrumfutura.com"
+=======
+                    "homepage": "https://github.com/padraic",
+                    "role": "Author"
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
                 },
                 {
                     "name": "Dave Marshall",
                     "email": "dave.marshall@atstsolutions.co.uk",
+<<<<<<< HEAD
                     "homepage": "http://davedevelopment.co.uk"
+=======
+                    "homepage": "https://davedevelopment.co.uk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nathanael Esayeas",
+                    "email": "nathanael.esayeas@protonmail.com",
+                    "homepage": "https://github.com/ghostwriter",
+                    "role": "Lead Developer"
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
                 }
             ],
             "description": "Mockery is a simple yet flexible PHP mock object framework",
@@ -5902,10 +5943,20 @@
                 "testing"
             ],
             "support": {
+<<<<<<< HEAD
                 "issues": "https://github.com/mockery/mockery/issues",
                 "source": "https://github.com/mockery/mockery/tree/1.6.2"
             },
             "time": "2023-06-07T09:07:52+00:00"
+=======
+                "docs": "https://docs.mockery.io/",
+                "issues": "https://github.com/mockery/mockery/issues",
+                "rss": "https://github.com/mockery/mockery/releases.atom",
+                "security": "https://github.com/mockery/mockery/security/advisories",
+                "source": "https://github.com/mockery/mockery"
+            },
+            "time": "2023-07-19T15:51:02+00:00"
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
         },
         {
             "name": "myclabs/deep-copy",
@@ -7104,6 +7155,7 @@
         },
         {
             "name": "sebastian/global-state",
+<<<<<<< HEAD
             "version": "6.0.0",
             "source": {
                 "type": "git",
@@ -7114,6 +7166,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/aab257c712de87b90194febd52e4d184551c2d44",
                 "reference": "aab257c712de87b90194febd52e4d184551c2d44",
+=======
+            "version": "6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/global-state.git",
+                "reference": "7ea9ead78f6d380d2a667864c132c2f7b83055e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/7ea9ead78f6d380d2a667864c132c2f7b83055e4",
+                "reference": "7ea9ead78f6d380d2a667864c132c2f7b83055e4",
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
                 "shasum": ""
             },
             "require": {
@@ -7153,7 +7217,12 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/global-state/tree/6.0.0"
+=======
+                "security": "https://github.com/sebastianbergmann/global-state/security/policy",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/6.0.1"
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
             },
             "funding": [
                 {
@@ -7161,7 +7230,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-02-03T07:07:38+00:00"
+=======
+            "time": "2023-07-19T07:19:23+00:00"
+>>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
         },
         {
             "name": "sebastian/lines-of-code",
