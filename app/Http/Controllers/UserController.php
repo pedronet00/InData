@@ -9,9 +9,16 @@ use App\Models\User;
 class UserController extends Controller
 {
     
+    public function index(){
+
+        $users = User::all();
+
+        return view('user.list', compact('users'));
+    }
+
     public function register(){
 
-        return view('user.register');
+        return view('auth.register');
     }
 
     public function store(Request $request){
@@ -19,7 +26,6 @@ class UserController extends Controller
         $user = new User;
 
         $user->name = $request->name;
-        $user->city = $request->city;
         $user->email = $request->email;
         $user->password = $request->password;
 

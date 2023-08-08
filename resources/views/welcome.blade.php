@@ -1,41 +1,45 @@
 @extends('layouts.main')
 
-<<<<<<< HEAD
-@section('title', 'HDC Events')
-
 @section('content')
 
-        <h1>Princípios de Laravel</h1>
 
-        @if(10 > 50)
-            <p>A condição é true</p>
-        @endif
-        
-        @if($nome == "Pedro")
-            <p>O nome é Pedro</p>
-            <p>Sua idade é {{$idade}}</p>
-        @else
-            <p>O nome não é Pedro</p>
-            <p>Sua idade não é {{$idade}}</p>
-        @endif
+<h1 style="text-align: center; width: 100%; margin-top: 5%;">Seus próximos projetos <span style="text-align: center; background-color: #343a40; color: white; padding: 1%;">desta semana:</span> </h1>
 
-        @for($i = 0; $i < count($arr); $i++)
-            <p>{{$arr[$i]}} - {{$i}}</p>
-            @if($i == 2)
-                <p>O $i é 2</p>
-            @endif
-        @endfor
+<div class="container" style="margin-top: 5%;">
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores do carrossel -->
+        <ol class="carousel-indicators">
+            @foreach($projects as $index => $project)
+                <li data-bs-target="#projectCarousel" data-bs-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}"></li>
+            @endforeach
+        </ol>
 
-        @foreach($nomes as $nome)
-            <p>Nome: {{$nome}}</p>
-        @endforeach
+        <!-- Slides do carrossel -->
+        <div class="carousel-inner">
+            @foreach($projects as $index => $project)
+                <div class="carousel-item {{ $index === 0 ? 'active' : '' }}" style="margin: auto;height: 500px;">
+                <img src="/imgs/projects/{{$project->image}}" style="width: 100%;" class="card-img-top" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{ $project->projectName }}</h5>
+                        <p>{{ $project->description }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
 
-@endsection
-
+        <!-- Controles do carrossel -->
+        <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
     
-=======
-@section('content')
-        <h1 style="text-align: center; width: 100%; font-size: 64px; margin-top: 5%;">Criar seus projetos nunca foi <span style="font-weight: 600; color: black;">tão fácil!</span></h1>
+    
+<iframe src="/notes/list" style="border-radius: 10px; width: 50%; height: 500px; text-align: center; margin-top: 5%;"></iframe>
+</div>
+
+
         
 @endsection
->>>>>>> ff977a00771accfd3f337933ac893d6ebe244ca5
